@@ -1,0 +1,162 @@
+xquery version "1.0";
+(:question 1:)
+let $a := doc("chiranjeevi_balawat.xml")//nw
+let $newline := "&#10;"
+for $b in $a /USERS/myid
+	let $myposts := $a /POST[userid=$b ]
+	for $eachpost in $myposts 
+		let $pcontent := $eachpost/content
+		let $pauthor  := $a/USERS[myid = $eachpost/author]/name
+
+order by $b 
+return
+	<output>
+	{$newline}{$newline}
+		<user>{data($a/USERS[myid = $b ]/name )}: following are the posts on my wall, also see the comments under the replyToThePost Node</user>{$newline}
+		<postsOnMYWall>{data($pauthor  ) } writes : "{data($pcontent )}"</postsOnMYWall>{$newline}
+		<replyToThePost>{$newline }{let $com := $a /COMMENTS[postid = $eachpost/postid]/cid for $i in $com return concat($a/USERS[myid = $i /../cauthor]/name, " says: ", $i /../content, $newline ) }</replyToThePost> {$newline }{$newline }
+	</output>
+	
+/*************************************************************************************************************************************/
+
+xquery version "1.0";
+(: question 2 :)
+
+let $a := doc("chiranjeevi_balawat.xml")//nw
+let $newline := "&#10;"
+for $b in $a /USERS/myid
+let $I_liked  := $a /POST/likes[Like = $b ]/../postid
+let $otherliked  := $a /POST[postid = $I_liked ]/likes/Like
+order by $a /POST/postid
+return
+	<output>
+	{$newline}{$newline}
+			<user>{data($a/USERS[myid = $b ]/name )} says : "i like the following post and so do the users under usersFriendLiked"</user>{$newline}
+		<userLiked>post with 'postid' :{for $i in $I_liked return concat($i , ' ,')}</userLiked>{$newline}
+		<usersFriendLiked>{data(distinct-values(let $y := for  $x  in $otherliked  return concat($a/USERS[myid = $x]/name/string(), " ,")  return $y ))}</usersFriendLiked>{$newline}{$newline}
+	</output>
+
+
+/*************************************************************************************************************************************/
+
+xquery version "1.0";
+
+(: question 3 :)
+let $a := doc("chiranjeevi_balawat.xml")//nw
+let $newline := "&#10;"
+(: question 3 :)
+
+let $x :=
+for $b in $a/USERS/myid
+let $countfriend := count($a/FRIEND[myid = $b]/fid)
+return  $countfriend   
+let $c := max($x )
+let $i := index-of($x, $c  )
+
+return 
+		
+	   <output>
+	   {$newline}{$newline}
+		   <a>The following users have the highest number of friends viz. = {data($c )}</a>{$newline}
+	   
+			  <b> {for $j in $i return
+					   concat (data($a/USERS[myid = $j ]/name), ' ,')}</b>{$newline}{$newline}
+			   
+	   
+	   
+	   </output>
+	   
+
+/*************************************************************************************************************************************/
+(: question 4 :)
+xquery version "1.0";
+let $a := doc("chiranjeevi_balawat.xml")//nw
+let $newline := "&#10;"
+let $check := 0
+for $b in $a/USERS/myid
+
+let $Level1 := $a/FRIEND[myid = $b]/fid
+	for $c in $Level1 
+	let $Level2 := $a/FRIEND[myid = $c]/fid
+		for $d in $Level2  
+		let $Level3 := $a/FRIEND[myid = $d]/fid
+
+return
+
+		<output>
+		{$newline}{$newline}
+			<user>{data($a/USERS[myid = $b]/name)} says : "my 3 level list is as follows" </user>{$newline}
+			<first > { for $i in distinct-values($Level1) return concat(data($a/USERS[ myid = $i   ]/name), ' ,') } </first>{$newline}
+			
+			<second> {for $i in distinct-values($Level2) return concat(data($a/USERS[ myid = $i   ]/name), ' ,') } </second>{$newline}
+			
+			<third> {for $i in distinct-values($Level3) return concat(data($a/USERS[ myid = $i   ]/name), ' ,')} </third> {$newline}{$newline}
+			
+		</output> 
+
+
+/*************************************************************************************************************************************/
+(: question 5 :)
+xquery version "1.0";
+let $a := doc("chiranjeevi_balawat.xml")//nw
+let $newline := "&#10;"
+for $b in $a/USERS/myid
+let $myfriends := $a/FRIEND[myid = $b]/fid
+	
+	return 
+		<output> 
+			{$newline}{$newline}
+			<user>{$a/USERS[myid = $b ]/name/string()} says: --- </user>{$newline}
+		<myFriendCount>{ for $c in $myfriends 
+	let $countfriend := count($a/FRIEND[myid = $c]/fid) return concat("my friend ", $a/USERS[myid = $c ]/name, " has ", $countfriend   ," friends ", $newline )} </myFriendCount>
+			{$newline}{$newline}
+		 </output>
+
+
+/*************************************************************************************************************************************/
+
+(: question 6 :)
+xquery version "1.0";
+let $a := doc("chiranjeevi_balawat.xml")//nw
+let $newline := "&#10;"
+for $b in $a /USERS/myid
+let $msgrecvd := $a /MESSAGE/receiver[recvr = $b ]/..
+for $i in $msgrecvd 
+
+let $mid := $i /mid
+let $date := $i  /date
+let $sub := $i  /sub
+let $content := $i  /content
+let $sender := $i  /sender
+let $receivers := $i  /receiver/recvr
+let $countreply := count($i /../MSGREPLY[mid = $mid ]) 
+order by $mid 
+
+return
+	<output>
+		{$newline}	{$newline}
+		<user> {data($a/USERS[myid = $b ]/name)} : I received the following messages</user>	{$newline}
+		<message>{ concat("date: ", data($date), $newline )} {concat("subject: ", data($sub ), $newline )} {concat("content: ", data($content ), $newline )} {concat("sender: ", data($a/USERS[myid = $sender ]/name), $newline )} {concat("recepients: ", "")}{data(distinct-values(let $y := for  $x  in $receivers  return concat($a/USERS[myid = $x]/name/string(), " ,")  return $y ))} {concat($newline, "numberof replies: ", data($countreply ), $newline )} </message>	{$newline}	{$newline}
+	</output>
+
+
+
+
+
+/*************************************************************************************************************************************/
+
+
+
+xquery version "1.0";
+(: question 7 :)
+let $a := doc("chiranjeevi_balawat.xml")//nw
+let $newline := "&#10;"
+for $b  in $a /USERS/myid
+let $itemBought := $a /REVENUE[userid = $b ]/item/string()
+let $revenue := sum($a /REVENUE[userid = $b ]/price)
+order by $b 
+return
+	<output>
+	{$newline}{$newline}		<user>revenue generated by me : {data($a/USERS[myid = $b ]/name)}</user>{$newline}
+		<myRevenue> I bought the following items: {for $i in $itemBought return concat($i , ' ,')}  total =  {$revenue }</myRevenue>{$newline}{$newline}
+	</output>

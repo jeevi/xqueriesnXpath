@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="nw">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="USERS" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="myid" type="xs:integer"/>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="emailid" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FRIEND" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="myid" type="xs:integer"/>
+							<xs:element name="fid" type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="POST" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="postid" type="xs:integer"/>
+							<xs:element name="content" type="xs:string"/>
+							<xs:element name="author" type="xs:integer"/>
+							<xs:element name="userid" type="xs:integer"/>
+							<xs:element name="likes" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Like" type="xs:integer"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="COMMENTS" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cid" type="xs:integer"/>
+							<xs:element name="postid" type="xs:integer"/>
+							<xs:element name="content" type="xs:string"/>
+							<xs:element name="cauthor" type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MESSAGE" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mid" type="xs:integer"/>
+							<xs:element name="date" type="xs:date"/>
+							<xs:element name="sub" type="xs:string"/>
+							<xs:element name="content" type="xs:string"/>
+							<xs:element name="sender" type="xs:integer"/>
+							<xs:element name="receiver" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="recvr" type="xs:integer"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MSGREPLY" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="mid" type="xs:integer"/>
+							<xs:element name="content" type="xs:string"/>
+							<xs:element name="replyby" type="xs:integer"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="REVENUE" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="userid" type="xs:integer"/>
+							<xs:element name="item" type="xs:string"/>
+							<xs:element name="price" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="USERID">
+			<xs:selector xpath="USERS"/>
+			<xs:field xpath="myid"/>
+		</xs:key>
+		<xs:key name="POSTID">
+			<xs:selector xpath="POST"/>
+			<xs:field xpath="postid"/>
+		</xs:key>
+		<xs:key name="MID">
+			<xs:selector xpath="MESSAGE"/>
+			<xs:field xpath="mid"/>
+		</xs:key>
+		<xs:key name="CID">
+			<xs:selector xpath="COMMENTS"/>
+			<xs:field xpath="cid"/>
+		</xs:key>
+		<xs:keyref name="USERIDFRIEND" refer="USERID">
+			<xs:selector xpath="FRIEND"/>
+			<xs:field xpath="myid"/>
+		</xs:keyref>
+		<xs:keyref name="FRIENDIDFRIEND" refer="USERID">
+			<xs:selector xpath="FRIEND"/>
+			<xs:field xpath="fid"/>
+		</xs:keyref>
+		<xs:keyref name="AUTHPOST" refer="USERID">
+			<xs:selector xpath="POST"/>
+			<xs:field xpath="author"/>
+		</xs:keyref>
+		<xs:keyref name="WALLUSERID" refer="USERID">
+			<xs:selector xpath="POST"/>
+			<xs:field xpath="userid"/>
+		</xs:keyref>
+		<xs:keyref name="MSGSENDER" refer="USERID">
+			<xs:selector xpath="MESSAGE"/>
+			<xs:field xpath="sender"/>
+		</xs:keyref>
+		<xs:keyref name="MSGRECV" refer="USERID">
+			<xs:selector xpath="MESSAGE"/>
+			<xs:field xpath="receiver"/>
+		</xs:keyref>
+		<xs:keyref name="USERIDREPLY" refer="USERID">
+			<xs:selector xpath="MSGREPLY"/>
+			<xs:field xpath="replyby"/>
+		</xs:keyref>
+		<xs:keyref name="MESSAGEIDR" refer="MID">
+			<xs:selector xpath="MSGREPLY"/>
+			<xs:field xpath="mid"/>
+		</xs:keyref>
+		<xs:keyref name="COMMENTID" refer="POSTID">
+			<xs:selector xpath="COMMENTS"/>
+			<xs:field xpath="postid"/>
+		</xs:keyref>
+		<xs:keyref name="USERIDREV" refer="USERID">
+			<xs:selector xpath="REVENUE"/>
+			<xs:field xpath="userid"/>
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,1026 @@
+   QUERY 1
+
+<output>
+
+<user>chiranjeevi: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>sharath writes : "how r u"</postsOnMYWall>
+<replyToThePost>
+paul says: hmmm
+preethi says: suit up!
+</replyToThePost>
+
+</output><output>
+
+<user>chiranjeevi: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>dileep writes : "movie tomorrow"</postsOnMYWall>
+<replyToThePost>
+chiranjeevi says: sure
+aparna says: ll be there!
+paul says: lets do this!
+</replyToThePost>
+
+</output><output>
+
+<user>chiranjeevi: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>preethi writes : "going to california"</postsOnMYWall>
+<replyToThePost>
+preethi says: sure
+sharath says: awesome
+sharath says: seriously???
+</replyToThePost>
+
+</output><output>
+
+<user>chiranjeevi: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>susan writes : "thats rad"</postsOnMYWall>
+<replyToThePost>
+ajay says: ok dude
+manasa says: doooode
+manasa says: ok
+</replyToThePost>
+
+</output><output>
+
+<user>ajay: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>chiranjeevi writes : "rugby practise tomorrow"</postsOnMYWall>
+<replyToThePost>
+dileep says: pretty cool huh?!
+</replyToThePost>
+
+</output><output>
+
+<user>dileep: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>chiranjeevi writes : "go seawolves"</postsOnMYWall>
+<replyToThePost>
+chiranjeevi says: yeah
+preethi says: yeah
+aparna says: done
+</replyToThePost>
+
+</output><output>
+
+<user>preethi: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>manasa writes : "hello"</postsOnMYWall>
+<replyToThePost>
+susan says: awesome
+</replyToThePost>
+
+</output><output>
+
+<user>paul: following are the posts on my wall, also see the comments under the replyToThePost Node</user>
+<postsOnMYWall>dileep writes : "congrats"</postsOnMYWall>
+<replyToThePost>
+aparna says: ok
+ajay says: ok
+manisha says: go!
+</replyToThePost>
+
+</output>
+
+
+/***************************************************************************************************************/
+
+QUERY 2
+
+<output>
+
+<user>chiranjeevi says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :1 ,2 ,3 ,6 ,</userLiked>
+<usersFriendLiked>chiranjeevi ,ajay ,manisha ,sharath ,paul ,manasa ,dileep ,aparna ,</usersFriendLiked>
+
+</output><output>
+
+<user>ajay says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :1 ,3 ,4 ,5 ,6 ,8 ,</userLiked>
+<usersFriendLiked>chiranjeevi ,ajay ,manisha ,dileep ,aparna ,paul ,sharath ,manasa ,susan ,</usersFriendLiked>
+
+</output><output>
+
+<user>aparna says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :3 ,5 ,6 ,8 ,</userLiked>
+<usersFriendLiked>dileep ,aparna ,ajay ,chiranjeevi ,paul ,manasa ,susan ,</usersFriendLiked>
+
+</output><output>
+
+<user>manasa says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :2 ,5 ,6 ,</userLiked>
+<usersFriendLiked>sharath ,paul ,chiranjeevi ,manasa ,aparna ,ajay ,</usersFriendLiked>
+
+</output><output>
+
+<user>sharath says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :2 ,4 ,7 ,</userLiked>
+<usersFriendLiked>sharath ,paul ,chiranjeevi ,manasa ,ajay ,dileep ,manisha ,preethi ,</usersFriendLiked>
+
+</output><output>
+
+<user>manisha says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :1 ,7 ,</userLiked>
+<usersFriendLiked>chiranjeevi ,ajay ,manisha ,sharath ,dileep ,preethi ,</usersFriendLiked>
+
+</output><output>
+
+<user>dileep says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :3 ,4 ,7 ,</userLiked>
+<usersFriendLiked>dileep ,aparna ,ajay ,chiranjeevi ,paul ,sharath ,manisha ,preethi ,</usersFriendLiked>
+
+</output><output>
+
+<user>preethi says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :7 ,</userLiked>
+<usersFriendLiked>sharath ,manisha ,dileep ,preethi ,</usersFriendLiked>
+
+</output><output>
+
+<user>paul says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :2 ,4 ,5 ,8 ,</userLiked>
+<usersFriendLiked>sharath ,paul ,chiranjeevi ,manasa ,ajay ,dileep ,aparna ,susan ,</usersFriendLiked>
+
+</output><output>
+
+<user>susan says : "i like the following post and so do the users under usersFriendLiked"</user>
+<userLiked>post with 'postid' :8 ,</userLiked>
+<usersFriendLiked>paul ,susan ,ajay ,aparna ,</usersFriendLiked>
+
+</output>
+
+/***************************************************************************************************************/
+QUERY 3
+<output>
+
+<a>The following users have the highest number of friends viz. = 5</a>
+<b>ajay ,</b>
+
+</output>
+
+/***************************************************************************************************************/
+QUERY 4
+
+<output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>ajay ,chiranjeevi ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>ajay ,chiranjeevi ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>chiranjeevi ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>chiranjeevi says : "my 3 level list is as follows" </user>
+<first>ajay ,aparna ,paul ,dileep ,</first>
+<second>chiranjeevi ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,chiranjeevi ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,chiranjeevi ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>ajay says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</first>
+<second>ajay ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>aparna says : "my 3 level list is as follows" </user>
+<first>ajay ,chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>manasa says : "my 3 level list is as follows" </user>
+<first>preethi ,</first>
+<second>manasa ,</second>
+<third>preethi ,</third>
+
+</output><output>
+
+<user>sharath says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>sharath says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>sharath says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>sharath says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>sharath says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>manisha says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>manisha says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>manisha says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>manisha says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>manisha says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>dileep says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>dileep says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>dileep says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>dileep says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>preethi says : "my 3 level list is as follows" </user>
+<first>manasa ,</first>
+<second>preethi ,</second>
+<third>manasa ,</third>
+
+</output><output>
+
+<user>paul says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</third>
+
+</output><output>
+
+<user>paul says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>paul says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>paul says : "my 3 level list is as follows" </user>
+<first>chiranjeevi ,</first>
+<second>ajay ,aparna ,paul ,dileep ,</second>
+<third>chiranjeevi ,</third>
+
+</output><output>
+
+<user>susan says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,aparna ,paul ,dileep ,</third>
+
+</output><output>
+
+<user>susan says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,chiranjeevi ,</third>
+
+</output><output>
+
+<user>susan says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>susan says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output><output>
+
+<user>susan says : "my 3 level list is as follows" </user>
+<first>ajay ,</first>
+<second>chiranjeevi ,aparna ,manisha ,sharath ,susan ,</second>
+<third>ajay ,</third>
+
+</output>
+
+
+/***************************************************************************************************************/
+QUERY 5
+
+<output>
+
+<user>chiranjeevi says: --- </user>
+<myFriendCount>my friend ajay has 5 friends 
+my friend aparna has 2 friends 
+my friend paul has 1 friends 
+my friend dileep has 1 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>ajay says: --- </user>
+<myFriendCount>my friend chiranjeevi has 4 friends 
+my friend aparna has 2 friends 
+my friend manisha has 1 friends 
+my friend sharath has 1 friends 
+my friend susan has 1 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>aparna says: --- </user>
+<myFriendCount>my friend ajay has 5 friends 
+my friend chiranjeevi has 4 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>manasa says: --- </user>
+<myFriendCount>my friend preethi has 1 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>sharath says: --- </user>
+<myFriendCount>my friend ajay has 5 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>manisha says: --- </user>
+<myFriendCount>my friend ajay has 5 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>dileep says: --- </user>
+<myFriendCount>my friend chiranjeevi has 4 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>preethi says: --- </user>
+<myFriendCount>my friend manasa has 1 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>paul says: --- </user>
+<myFriendCount>my friend chiranjeevi has 4 friends 
+</myFriendCount>
+
+</output><output>
+
+<user>susan says: --- </user>
+<myFriendCount>my friend ajay has 5 friends 
+</myFriendCount>
+
+</output>
+
+
+
+/***************************************************************************************************************/
+
+QUERY 6
+
+<output>
+
+<user>dileep : I received the following messages</user>
+<message>date: 01/02/2012
+subject: checking
+content: does it work
+sender: chiranjeevi
+recepients: aparna ,ajay ,dileep ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>ajay : I received the following messages</user>
+<message>date: 01/02/2012
+subject: checking
+content: does it work
+sender: chiranjeevi
+recepients: aparna ,ajay ,dileep ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>aparna : I received the following messages</user>
+<message>date: 01/02/2012
+subject: checking
+content: does it work
+sender: chiranjeevi
+recepients: aparna ,ajay ,dileep ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>ajay : I received the following messages</user>
+<message>date: 01/12/2012
+subject: who am i?
+content: a question with no answer
+sender: chiranjeevi
+recepients: ajay ,aparna ,manasa ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>aparna : I received the following messages</user>
+<message>date: 01/12/2012
+subject: who am i?
+content: a question with no answer
+sender: chiranjeevi
+recepients: ajay ,aparna ,manasa ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>manasa : I received the following messages</user>
+<message>date: 01/12/2012
+subject: who am i?
+content: a question with no answer
+sender: chiranjeevi
+recepients: ajay ,aparna ,manasa ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>manisha : I received the following messages</user>
+<message>date: 01/22/2012
+subject: gpl!!
+content: sardar ki gpl today in sac
+sender: aparna
+recepients: manasa ,sharath ,manisha ,
+numberof replies: 1
+</message>
+
+</output><output>
+
+<user>manasa : I received the following messages</user>
+<message>date: 01/22/2012
+subject: gpl!!
+content: sardar ki gpl today in sac
+sender: aparna
+recepients: manasa ,sharath ,manisha ,
+numberof replies: 1
+</message>
+
+</output><output>
+
+<user>sharath : I received the following messages</user>
+<message>date: 01/22/2012
+subject: gpl!!
+content: sardar ki gpl today in sac
+sender: aparna
+recepients: manasa ,sharath ,manisha ,
+numberof replies: 1
+</message>
+
+</output><output>
+
+<user>aparna : I received the following messages</user>
+<message>date: 01/04/2012
+subject: treat treat treat!!
+content: placement treat
+sender: ajay
+recepients: aparna ,manasa ,sharath ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>manasa : I received the following messages</user>
+<message>date: 01/04/2012
+subject: treat treat treat!!
+content: placement treat
+sender: ajay
+recepients: aparna ,manasa ,sharath ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>sharath : I received the following messages</user>
+<message>date: 01/04/2012
+subject: treat treat treat!!
+content: placement treat
+sender: ajay
+recepients: aparna ,manasa ,sharath ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>sharath : I received the following messages</user>
+<message>date: 01/31/2012
+subject: food in lobby
+content: help yourselves
+sender: manasa
+recepients: sharath ,manisha ,dileep ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>dileep : I received the following messages</user>
+<message>date: 01/31/2012
+subject: food in lobby
+content: help yourselves
+sender: manasa
+recepients: sharath ,manisha ,dileep ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>manisha : I received the following messages</user>
+<message>date: 01/31/2012
+subject: food in lobby
+content: help yourselves
+sender: manasa
+recepients: sharath ,manisha ,dileep ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>manisha : I received the following messages</user>
+<message>date: 03/02/2016
+subject: going home for good :)
+content: bangalore here i come!
+sender: sharath
+recepients: manisha ,dileep ,preethi ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>dileep : I received the following messages</user>
+<message>date: 03/02/2016
+subject: going home for good :)
+content: bangalore here i come!
+sender: sharath
+recepients: manisha ,dileep ,preethi ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>preethi : I received the following messages</user>
+<message>date: 03/02/2016
+subject: going home for good :)
+content: bangalore here i come!
+sender: sharath
+recepients: manisha ,dileep ,preethi ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>dileep : I received the following messages</user>
+<message>date: 01/12/2012
+subject: oooo la la la
+content: watte babe
+sender: manisha
+recepients: dileep ,preethi ,paul ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>preethi : I received the following messages</user>
+<message>date: 01/12/2012
+subject: oooo la la la
+content: watte babe
+sender: manisha
+recepients: dileep ,preethi ,paul ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>paul : I received the following messages</user>
+<message>date: 01/12/2012
+subject: oooo la la la
+content: watte babe
+sender: manisha
+recepients: dileep ,preethi ,paul ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>preethi : I received the following messages</user>
+<message>date: 09/02/2012
+subject: voila
+content: cet exams nationalized
+sender: dileep
+recepients: preethi ,paul ,susan ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>paul : I received the following messages</user>
+<message>date: 09/02/2012
+subject: voila
+content: cet exams nationalized
+sender: dileep
+recepients: preethi ,paul ,susan ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>susan : I received the following messages</user>
+<message>date: 09/02/2012
+subject: voila
+content: cet exams nationalized
+sender: dileep
+recepients: preethi ,paul ,susan ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>paul : I received the following messages</user>
+<message>date: 12/02/2012
+subject: india in peril
+content: dirty politics the sole reason!
+sender: preethi
+recepients: paul ,susan ,chiranjeevi ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>chiranjeevi : I received the following messages</user>
+<message>date: 12/02/2012
+subject: india in peril
+content: dirty politics the sole reason!
+sender: preethi
+recepients: paul ,susan ,chiranjeevi ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>susan : I received the following messages</user>
+<message>date: 12/02/2012
+subject: india in peril
+content: dirty politics the sole reason!
+sender: preethi
+recepients: paul ,susan ,chiranjeevi ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>ajay : I received the following messages</user>
+<message>date: 11/02/2012
+subject: hello !!!
+content: am bak!
+sender: paul
+recepients: susan ,chiranjeevi ,ajay ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>chiranjeevi : I received the following messages</user>
+<message>date: 11/02/2012
+subject: hello !!!
+content: am bak!
+sender: paul
+recepients: susan ,chiranjeevi ,ajay ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>susan : I received the following messages</user>
+<message>date: 11/02/2012
+subject: hello !!!
+content: am bak!
+sender: paul
+recepients: susan ,chiranjeevi ,ajay ,
+numberof replies: 2
+</message>
+
+</output><output>
+
+<user>aparna : I received the following messages</user>
+<message>date: 09/22/2012
+subject: good to go!
+content: american football is a sad version of rugby
+sender: susan
+recepients: chiranjeevi ,ajay ,aparna ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>ajay : I received the following messages</user>
+<message>date: 09/22/2012
+subject: good to go!
+content: american football is a sad version of rugby
+sender: susan
+recepients: chiranjeevi ,ajay ,aparna ,
+numberof replies: 3
+</message>
+
+</output><output>
+
+<user>chiranjeevi : I received the following messages</user>
+<message>date: 09/22/2012
+subject: good to go!
+content: american football is a sad version of rugby
+sender: susan
+recepients: chiranjeevi ,ajay ,aparna ,
+numberof replies: 3
+</message>
+
+</output>
+
+
+
+/***************************************************************************************************************/
+
+QUERY 7
+
+<output>
+
+<user>revenue generated by me : chiranjeevi</user>
+<myRevenue> I bought the following items: shoes ,cell phone ,  total =  139.98</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : susan</user>
+<myRevenue> I bought the following items: mug ,  total =  4.99</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : ajay</user>
+<myRevenue> I bought the following items: bag ,potato ,  total =  29.98</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : aparna</user>
+<myRevenue> I bought the following items: car ,onions ,  total =  4047.98</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : manasa</user>
+<myRevenue> I bought the following items: webcam ,milk ,  total =  89.98</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : sharath</user>
+<myRevenue> I bought the following items: loafers ,lamp ,  total =  59.98</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : manisha</user>
+<myRevenue> I bought the following items: shoes ,laptop ,  total =  409.98</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : dileep</user>
+<myRevenue> I bought the following items: ipad ,  total =  444.99</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : preethi</user>
+<myRevenue> I bought the following items: shoes ,iphone ,  total =  159.98</myRevenue>
+
+</output><output>
+
+<user>revenue generated by me : paul</user>
+<myRevenue> I bought the following items: tequila ,  total =  6.99</myRevenue>
+
+</output>
